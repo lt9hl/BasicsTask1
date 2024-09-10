@@ -1,6 +1,7 @@
 fun main() {
         print("Введите последовательность символов: ")
         val name = readln()?.toCharArray()
+    if(name == null) println("Введены некорректные данные")
         name?.let {
             var countName: String = ""
             var count: Int = 1;
